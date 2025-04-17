@@ -2,24 +2,24 @@ function App() {
   return (
     <div class="wrapper">
       <header>React Todo</header>
-      <ul className="tasks">
-        <li className="tasks-header">
+      <ul class="tasks">
+        <li class="tasks-header">
           <input id="checkall" type="checkbox" />
           <label>Task</label>
-          <span className="due-date">Due date</span>
-          <span className="priority">Priority</span>
+          <span class="due-date">Due date</span>
+          <span class="priority">Priority</span>
         </li>
-        <li className="task-item">
+        <li class="task-item">
           <input id="todo_1" type="checkbox" />
-          <label htmlFor="todo_1">React Component 마스터</label>
-          <span className="due-date">2025-12-31</span>
-          <span className="priority">1</span>
+          <label for="todo_1">React Component 마스터</label>
+          <span class="due-date">2025-12-31</span>
+          <span class="priority">1</span>
         </li>
-        <li className="task-item">
+        <li class="task-item">
           <input id="todo_2" type="checkbox" />
-          <label htmlFor="todo_2">React Component 마스터</label>
-          <span className="due-date">2025-12-31</span>
-          <span className="priority">1</span>
+          <label for="todo_2">React Component 마스터</label>
+          <span class="due-date">2025-12-31</span>
+          <span class="priority">1</span>
         </li>
       </ul>
       <footer>
