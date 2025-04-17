@@ -1,6 +1,18 @@
 function App() {
+  const onButtonClickHandler = () => {
+    alert("Todo 추가!");
+  };
+
+  const onTodoInputKeyUpHandler = (event) => {
+    console.log(event.currentTarget.value);
+  };
+
+  const onPriorityChangeHandler = (event) => {
+    alert(event.currentTarget.value);
+  };
+
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <header>React Todo</header>
       <ul className="tasks">
         <li className="tasks-header">
@@ -23,15 +35,21 @@ function App() {
         </li>
       </ul>
       <footer>
-        <input type="text" placeholder="Task" />
+        <input
+          type="text"
+          placeholder="Task"
+          onKeyUp={onTodoInputKeyUpHandler}
+        />
         <input type="date" />
-        <select>
+        <select onChange={onPriorityChangeHandler}>
           <option>우선순위</option>
           <option value="1">높음</option>
           <option value="2">보통</option>
           <option value="3">낮음</option>
         </select>
-        <button type="button">Save</button>
+        <button type="button" onClick={onButtonClickHandler}>
+          Save
+        </button>
       </footer>
     </div>
   );
