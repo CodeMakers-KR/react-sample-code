@@ -119,3 +119,31 @@ button:active {
   color: #333;
   color: #fff;
 }
+
+button.confirm-ok {
+  background-color: #79d8aa;
+}
+
+button.confirm-cancel {
+  background-color: #d87979;
+}
+
+.modal {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.625rem;
+}
+
+.modal .modal-body .modal-close-button {
+  text-align: right;
+  font-weight: 900;
+}
+
+.modal .modal-button-group {
+  margin: 0.625rem 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.625rem;
+  height: 2rem;
+}
