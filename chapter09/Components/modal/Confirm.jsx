@@ -12,7 +12,7 @@ export default function Confirm({
     <dialog className="modal" ref={ref}>
       <div className="modal-body">
         {children}
-        <section>
+        <section className="modal-button-group">
           <button type="button" className="confirm-ok" onClick={okHandler}>
             OK
           </button>
