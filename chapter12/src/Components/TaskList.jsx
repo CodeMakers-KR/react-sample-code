@@ -2,15 +2,13 @@ import { useRef, useState } from "react";
 import TaskHeader from "./TaskHeader";
 import TaskItem from "./TaskItem";
 import Confirm from "./modal/Confirm";
+import Alert from "./modal/Modal";
 
-export default function TaskList({
-  todoLists,
-  setTodoLists,
-  setAlertMessage,
-  alertRef,
-}) {
+export default function TaskList({ todoLists, setTodoLists }) {
   const doneConfirmRef = useRef();
+  const alertRef = useRef();
 
+  const [alertMessage, setAlertMessage] = useState();
   const [doneConfirmMessage, setDoneConfirmMessage] = useState();
 
   const doneTodoHandler = (event) => {
@@ -60,6 +58,11 @@ export default function TaskList({
         ))}
       </ul>
 
+      <Alert ref={alertRef}>
+        <div>
+          <h3>{alertMessage}</h3>
+        </div>
+      </Alert>
       <Confirm ref={doneConfirmRef} okHandler={doneTodoItemHandler}>
         <div>{doneConfirmMessage}</div>
       </Confirm>
