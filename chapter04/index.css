@@ -91,6 +91,11 @@ body {
   flex-basis: 4rem;
 }
 
+.done-todo {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
 input,
 select,
 button {
