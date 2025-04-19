@@ -40,7 +40,13 @@ body {
   padding: 1rem;
 }
 
+.wrapper > .tasks > li.tasks-counter {
+  background-color: #fff;
+  display: flex;
+  gap: 0.625rem;
+}
 .wrapper > .tasks > li.tasks-header {
+  background-color: #fff;
   font-weight: 900;
   position: sticky;
   top: 4.5rem;
